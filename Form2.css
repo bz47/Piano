@@ -1,0 +1,83 @@
+body{
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+
+}
+
+.banner{
+    display: flex;
+    width: 99.5%;
+    min-height: 17rem;
+    border: solid orange 4px;
+    justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    
+}
+
+.flag-tainer{
+    display: flex;
+    justify-content: center;
+    width: 36%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.flag{
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+strong{
+    display: inline-block;
+    text-align: center;
+    margin: 0 5rem;
+   
+}
+
+.main{
+    width: 99.5%;
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr;
+    grid-template-areas:   "reviews pic form";
+    
+}
+
+h1{
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.reviews{
+    grid-area: reviews;
+    padding-top: -2px;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+
+.container{
+    grid-area: pic;
+    width:100%;
+    height: 99%;
+    overflow: hidden;
+   
+}
+
+.tacos{
+   max-width: 100%;
+   height: auto;
+    display: block;
+  
+}
+
+form{
+    grid-area: form;
+    padding-left: 1rem;
+    margin-left: 2rem;
+}
+

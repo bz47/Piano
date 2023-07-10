@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FORM VALIDATION</title>
+        <link rel="stylesheet" href="./HTML-Form.css">
+        <meta name="viewport" content="width=device-width, initial-value=1">
+    </head>
+    <body>
+        <div>
+            <h1>HTML FORM #1</h1>
+            <p>First practice making a form. 5/31/2023</p>
+            <ul> REQUIREMENTS:
+                <li>action = tells where to send info & Method = tells what to do with info</li>
+                <li>a input form can be created with input and brackets. input forms need a type attribute and a name attribute</li>
+                <li>a label element to define what the input is for. Labels have opening and closing brackets and need a for attribute with a value of the inputs's id.</li>
+                <li>input can have type of password/text/number/range/radio/checkbox...</li>
+            </ul>
+            <form action="./" method="POST">
+                <label for="nameField">Name:</label>
+                <input type="text" name="nameField" id="nameField" minlength="2" maxlength="10">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required pattern="[0-9]{5,10}">
+                <br>
+                <label for="quantity">Pieces of Bacon:</label>
+                <input type="number" name="bacon" id="bacon" required min="1" max="5">
+                <br>
+                <label for="spectrum">How Strongly do you agree or disagree?</label>
+                <input type="range" name="agree-dis" id="spectrum" min="0" max="10" step="1">
+                <br>
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" name="toppings" id="cheese" value="cheese">
+                <br>
+                <label for="cheese">Pepperoni</label>
+                <input type="checkbox" name="toppings" id="pepperoni" value="pepperoni">
+                <br>
+                <label for="cheese">Onion</label>
+                <input type="checkbox" name="toppings" id="onion" value="onion">
+                <br>
+                <p>What is the sum of 1 + 1 ?</p>
+                <input type="radio" name="math" id="eleven">
+                <label for="eleven">11</label>
+                <input type="radio" name="math" id="two">
+                <label for="two">2</label>
+                <br>
+                <br>
+                <label for="list"> what do you like the most?</label>
+                <select id="list" name="hobbies">
+                    <option value="tv">TV</option>
+                    <option value="reading">Reading</option>
+                    <option value="exercise">Exercise</option>
+                    <option value="drinking">Drinking</option>
+                </select>
+                <br>
+                <br>
+                <label for="city">Where would you like to live?</label>
+                <input type="text" list="cities" id="city" name="city" required>
+                <datalist id="cities">
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Rio">Rio</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Punta">Punta</option>
+                </datalist>
+                <br>
+                <br>
+                <label for="blog">Anything you want to say?</label>
+                <textarea id="blog" name="blog" rows="5" columns="10">TYPE HERE</textarea>
+                <br>
+                <br>
+                <input type="submit" value="send">
+            </form>
+
+            <div class="tips">
+                <ul> TIPS and OPTIONS:
+                    <li>the name attribute is only used to send the info</li>
+                    <li>range inputs can have a min and max and step </li>
+                    <li>checkboxes for can have same name but ids must be different. also values must be set but wont be seen unless declared in label</li>
+                    <li>dropdown lists use select and option tags</li>
+                    <li>datalists are convenient bc users dont have to scroll through options, they can type their input</li>
+                    <li>datalist inputs take a list attribute whose values is passed to the datalist tag</li>
+                    <li>number inputs can use min and max to set parameters</li>
+                    <li>text inputs can use minlength and maxlength to set parameters</li>
+                    <li>use pattern attribute plus regEx to check if input fits required parameters</li>
+                </ul>
+            </div>
+        </div>
+        <script></script>
+    </body>
+</html>

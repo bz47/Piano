@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    background-color: rgb(40, 100, 100);
+    color: whitesmoke;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+   
+    height: 61rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tips{
+    display: flex;
+    justify-content: flex-start;
+    height: 20rem;
+}
+
+form{
+    background-color: grey;
+    border-radius: 5%;
+    font-size: large;
+    width: 30%;
+    height: 60%;
+    padding: 1rem 1.5rem;
+    color: black;
+    
+}

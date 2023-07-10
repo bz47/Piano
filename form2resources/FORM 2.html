@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0201)file:///Users/brandonreleford/Desktop/DevProjects/HTML%20CSS%20Practice/Form2.html?number=1&protein=beef&toppings=tomato&toppings=onion&toppings=cheese&comments=Add+the+special+%2430+salad&name=BBKINGZ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>FORM 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./FORM 2_files/Form2.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="flag-tainer">
+                <img class="flag" src="./FORM 2_files/360_F_8886656_KF4rLE1PNghzEv5jpy3NNyw3vGOu0DcB.jpeg">
+            </div>
+            <strong>Los Hermanos -
+            <br>
+             Tacos Calientes</strong>
+            <div class="flag-tainer">
+                <img class="flag" src="./FORM 2_files/360_F_8886656_KF4rLE1PNghzEv5jpy3NNyw3vGOu0DcB.jpeg">
+            </div>
+
+        </div>
+        <h1>Order Form</h1>
+        <div class="main">
+            <div class="reviews">
+                <p>"World's best Tacos!" -Mike</p>
+                <p>"Te van a encantar!" - Cecilia</p>
+                <p>"Get em before they're gone!" -T</p>
+                <p>"Better than mommas!" - Sierra</p>
+            </div>
+            <div class="container">
+                <img class="tacos" src="./FORM 2_files/Birria-Tacos-23.jpeg">
+            </div>
+            <form>
+                <lable for="number">How many Tacos would you like?</lable>
+                <input type="number" id="number" name="number" min="1" max="20" required="">
+                <p class="promt">Choose your Protein</p>
+                <input type="radio" name="protein" id="chicken" value="chicken" required="">
+                <label for="protein">Chicken</label>
+                <input type="radio" name="protein" id="beef" value="beef">
+                <label for="protein">Beef</label>
+                <input type="radio" name="protein" id="pork" value="pork">
+                <label for="protein">Pork</label>
+                <p class="promt">Choose your Toppings</p>
+                <input name="toppings" type="checkbox" id="tomato" value="tomato">
+                <label for="tomato">tomato</label>
+                <input name="toppings" type="checkbox" id="onion" value="onion">
+                <label for="onion">onion</label>
+                <input name="toppings" type="checkbox" id="cheese" value="cheese">
+                <label for="cheese">cheese</label>
+                <input name="toppings" type="checkbox" id="guac" value="guac">
+                <label for="guac">guac</label>
+                <input name="toppings" type="checkbox" id="sour-cream" value="sour-cream">
+                <label for="sour-cream">sour cream</label>
+                <input name="toppings" type="checkbox" id="beans" value="beans">
+                <label for="beans">beans</label>
+                <input name="toppings" type="checkbox" id="none" value="none">
+                <label for="none">none</label>
+                <br>
+                <br>
+                <label for="sauce">How Spicy? 1 - 10</label>
+                <input type="range" min="1" max="10" step="1" value="0">
+                <br>
+                <br>
+                <label for="comments" class="promt">Any special requests?</label>
+                <br>
+                <textarea id="comments" name="comments" rows="3" columns="6">Special Requests</textarea>
+                <br>
+                <br>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required="" minlength="2">
+                <br>
+                <br>
+                <input type="submit" value="Add to Basket">
+            </form>
+        </div>
+    
+</body></html>
